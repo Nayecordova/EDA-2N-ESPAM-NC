@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="smcU-t2Amy4QBjWSoXsQ">
+    <mxGraphModel dx="850" dy="466" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="stack_box" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="STACK (Memoria Estática / Pila)" vertex="1">
+          <mxGeometry height="360" width="320" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="var_ref" parent="stack_box" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#6c8ebf;" value="auditorio (Referencia) [Fila x Columna]" vertex="1">
+          <mxGeometry height="60" width="280" x="20" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="var_indices" parent="stack_box" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#6c8ebf;" value="int fila = 1, col = 2 (Variables locales)" vertex="1">
+          <mxGeometry height="60" width="280" x="20" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="var_cola" parent="stack_box" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#6c8ebf;" value="ColaCircular front, rear, tamaño" vertex="1">
+          <mxGeometry height="60" width="280" x="20" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="heap_box" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" value="HEAP (Memoria Dinámica / Objetos)" vertex="1">
+          <mxGeometry height="360" width="380" x="420" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="matriz_obj" parent="heap_box" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="Objeto Matriz Bidimensional [String][String]" vertex="1">
+          <mxGeometry height="120" width="340" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="celda_val" parent="heap_box" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" value="[Libre] | [Ocupado] (Acceso O(1) por índice)" vertex="1">
+          <mxGeometry height="50" width="300" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cola_obj" parent="heap_box" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Buffer Circular (Array de Enteros / Nodos)" vertex="1">
+          <mxGeometry height="90" width="340" x="20" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="conn_ref" edge="1" parent="1" source="var_ref" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#b85450;" target="matriz_obj" value="Apunta a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
